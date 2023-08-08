@@ -1,0 +1,27 @@
+.container{
+    background: linear-gradient(35deg,#31bfd8,#082457);
+    /* height: 270px; */
+    height: 100vh;
+    padding: 25px;
+    color: white;
+}
+
+h1{
+    font-weight: 500;
+}
+
+ul{
+    margin: 10px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+ul li a svg{
+    transition: 0.5s;
+}
+
+ul li a svg:hover{
+    fill: #31bfd8;
+}

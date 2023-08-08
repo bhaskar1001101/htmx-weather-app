@@ -1,0 +1,52 @@
+
+
+nav{
+    max-height: 200px;
+    height: 70px;
+    background: linear-gradient(35deg,#31bfd8,#082457);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    font-size: 35px;
+    color: white;
+    font-weight: 900;
+}
+
+div{
+    margin-left: auto;
+}
+
+a{
+    text-decoration: none;
+    padding: 18px;
+    font-size: 20px;
+    color: aliceblue;
+    border-radius: 60px;
+    transition: 0.5s;
+    margin:15px;
+}
+
+a:hover{
+    animation: under 1s 1;
+    background-color: white;
+    color: slateblue;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #082457;
+}
+
+@keyframes under {
+    from{
+        border: 0 solid white;
+    }
+    to{
+        border: 1px solid white;
+    }
+}
+
+/* @media only screen and(max-width: 600px) {
+    h2{
+        font-size: 35px;
+    }
+} */

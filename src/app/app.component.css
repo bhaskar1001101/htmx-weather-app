@@ -1,0 +1,10 @@
+wa-footer{
+    margin-top: 65px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+div{
+    display: block;
+}
