@@ -13,13 +13,8 @@
     background-color: #dad6d6;
     border-radius: 25px;
     text-align: center;
-    padding: 40px;
-    max-width: 300px;
-}
-
-.temps{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    padding: 40px 120px 40px 120px;
+    max-width: 20vw;
 }
 
 form{
