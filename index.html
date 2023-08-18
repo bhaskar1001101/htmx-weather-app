@@ -65,10 +65,16 @@
           set $latitude to position.coords.latitude
           set $longitude to position.coords.longitude
       end
+
+      def set()
+        set .form-container@hx-get to 'https://api.openweathermap.org/data/2.5/weather?appid=012ff8944fa6a9e5b321f30886682be6&lat=' + $latitude + '&lon=' + $longitude + '&cnt=1'
+        set .form-container.outerHTML to .form-container.outerHTML
+        htmx.process(.form-container)
+      end
     </script>
     <div
       class="form-container"
-      _="on load call navigator.geolocation.getCurrentPosition(\ position -> pos(position)) then wait 0.5s then log $latitude then log $longitude then set @hx-get to 'https://api.openweathermap.org/data/2.5/weather?appid=012ff8944fa6a9e5b321f30886682be6&lat=' + $latitude + '&lon=' + $longitude then log @hx-get"
+      _="on load call navigator.geolocation.getCurrentPosition(\ position -> pos(position)) wait 1s then log $latitude then log $longitude"
       hx-get="https://api.openweathermap.org/data/2.5/forecast?appid=012ff8944fa6a9e5b321f30886682be6&q=Kolkata&cnt=1"
       hx-trigger="load delay:1s"
       hx-swap="innerHTML"

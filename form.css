@@ -15,6 +15,7 @@
     text-align: center;
     padding: 40px 120px 40px 120px;
     max-width: 20vw;
+    transition: all ease-in 1s;
 }
 
 form{
