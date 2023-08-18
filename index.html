@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <title>Weather</title>
-    <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -21,9 +20,9 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" type="text/css" href="./navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./footer.css" />
+    <link rel="stylesheet" type="text/css" href="./form.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.4"
       integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV"
@@ -60,6 +59,12 @@
         >
       </div>
     </nav>
+    <script>
+        // set htmx config headerw to none
+        // document.addEventListener('htmx:configRequest', (event) => {
+        //     event.detail.headers = [];
+        // });
+    </script>
     <script type="text/hyperscript">
       def pos(position)
           set $latitude to position.coords.latitude
