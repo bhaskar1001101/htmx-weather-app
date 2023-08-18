@@ -1,5 +1,10 @@
-
-
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+}
 nav{
     max-height: 200px;
     height: 70px;
@@ -9,17 +14,17 @@ nav{
     align-items: center;
 }
 
-h2{
+.nav-header{
     font-size: 35px;
     color: white;
     font-weight: 900;
 }
 
-div{
+.nav-links-wrapper{
     margin-left: auto;
 }
 
-a{
+.nav-link{
     text-decoration: none;
     padding: 18px;
     font-size: 20px;
@@ -29,7 +34,7 @@ a{
     margin:15px;
 }
 
-a:hover{
+.nav-link:hover{
     animation: under 1s 1;
     background-color: white;
     color: slateblue;
@@ -44,9 +49,3 @@ a:hover{
         border: 1px solid white;
     }
 }
-
-/* @media only screen and(max-width: 600px) {
-    h2{
-        font-size: 35px;
-    }
-} */

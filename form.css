@@ -1,11 +1,14 @@
-.container{
+.form-container{
     padding: 20px;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(5,1fr);
     gap: 10px;
+    justify-content: center;
+    min-height: 40vh;
+    max-height: 100vh;
 }
 
-.card{
+.form-card{
     line-height: 40px;
     background-color: #dad6d6;
     border-radius: 25px;
